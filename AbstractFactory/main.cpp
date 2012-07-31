@@ -14,38 +14,30 @@
  In a project , For example , You want to create UI of Iphone or Ipad, Just change  Factory.CreateMacWindow() || Factory.CreateLinuxWindow()  is OK
  */
 
+#define condition 1
+
 int main(int argc, const char * argv[])
 {
     // insert code here...
     
     UIFactory Factory = UIFactory();
-    printf("*********test    Mac     UI*****************\n");
-    //test mac UI
-    Window *macWindow = Factory.CreateMacWindow();
-    Bar *macBar = macWindow->CreateBar();
-    Button *macButton = macWindow->CreateButton();
-    View *macView = macWindow->CreateView();
-    macBar->BarAction();
-    macButton->ButtonAction();
-    macView->ViewAction();
-    delete macBar;
-    delete macButton;
-    delete macView;
-    delete macWindow;
+    Window *myWindow = NULL;
+    if (condition) {
+        myWindow = Factory.CreateMacWindow();
+    } else {
+        myWindow = Factory.CreateLinuxWindow();
+    }
     
-    printf("*********test    linux   UI*****************\n");
-    //test linux UI
-    Window *linuxWindow = Factory.CreateLinuxWindow();
-    Bar *linuxBar = linuxWindow->CreateBar();
-    Button *linuxButton = linuxWindow->CreateButton();
-    View *linuxView = linuxWindow->CreateView();
-    linuxBar->BarAction();
-    linuxButton->ButtonAction();
-    linuxView->ViewAction();
-    delete linuxBar;
-    delete linuxButton;
-    delete linuxView;
-    delete linuxWindow;
+    Bar *currentbar = myWindow->CreateBar();
+    Button *currentButton = myWindow->CreateButton();
+    View *currentView = myWindow->CreateView();
+    currentbar->BarAction();
+    currentButton->ButtonAction();
+    currentView->ViewAction();
+    delete currentbar;
+    delete currentButton;
+    delete currentView;
+    delete myWindow;
     
     return 0;
 }
