@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		B2CC605415C7810200885769 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2CC605315C7810200885769 /* main.cpp */; };
 		B2CC605615C7810200885769 /* AbstractFactory.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B2CC605515C7810200885769 /* AbstractFactory.1 */; };
+		B2CC606015C7829500885769 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2CC605F15C7829400885769 /* Window.cpp */; };
+		B2CC606315C782E500885769 /* MacWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2CC606215C782E500885769 /* MacWindow.cpp */; };
+		B2CC606615C7836600885769 /* LinuxWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2CC606515C7836600885769 /* LinuxWindow.cpp */; };
+		B2CC606915C783DA00885769 /* Bar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2CC606815C783DA00885769 /* Bar.cpp */; };
+		B2CC606C15C783F700885769 /* Button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2CC606B15C783F700885769 /* Button.cpp */; };
+		B2CC606F15C7840500885769 /* View.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2CC606E15C7840500885769 /* View.cpp */; };
+		B2CC607715C7870A00885769 /* UIFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2CC607615C7870A00885769 /* UIFactory.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +35,20 @@
 		B2CC604F15C7810200885769 /* AbstractFactory */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AbstractFactory; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2CC605315C7810200885769 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B2CC605515C7810200885769 /* AbstractFactory.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = AbstractFactory.1; sourceTree = "<group>"; };
+		B2CC605C15C7820900885769 /* Window.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		B2CC605F15C7829400885769 /* Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Window.cpp; sourceTree = "<group>"; };
+		B2CC606115C782DA00885769 /* MacWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacWindow.h; sourceTree = "<group>"; };
+		B2CC606215C782E500885769 /* MacWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MacWindow.cpp; sourceTree = "<group>"; };
+		B2CC606415C7835B00885769 /* LinuxWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinuxWindow.h; sourceTree = "<group>"; };
+		B2CC606515C7836600885769 /* LinuxWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinuxWindow.cpp; sourceTree = "<group>"; };
+		B2CC606715C783D000885769 /* Bar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bar.h; sourceTree = "<group>"; };
+		B2CC606815C783DA00885769 /* Bar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bar.cpp; sourceTree = "<group>"; };
+		B2CC606A15C783EE00885769 /* Button.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Button.h; sourceTree = "<group>"; };
+		B2CC606B15C783F700885769 /* Button.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Button.cpp; sourceTree = "<group>"; };
+		B2CC606D15C783FE00885769 /* View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = View.h; sourceTree = "<group>"; };
+		B2CC606E15C7840500885769 /* View.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = View.cpp; sourceTree = "<group>"; };
+		B2CC607415C786FC00885769 /* UIFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIFactory.h; sourceTree = "<group>"; };
+		B2CC607615C7870A00885769 /* UIFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIFactory.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +83,20 @@
 			children = (
 				B2CC605315C7810200885769 /* main.cpp */,
 				B2CC605515C7810200885769 /* AbstractFactory.1 */,
+				B2CC605C15C7820900885769 /* Window.h */,
+				B2CC605F15C7829400885769 /* Window.cpp */,
+				B2CC606115C782DA00885769 /* MacWindow.h */,
+				B2CC606215C782E500885769 /* MacWindow.cpp */,
+				B2CC606415C7835B00885769 /* LinuxWindow.h */,
+				B2CC606515C7836600885769 /* LinuxWindow.cpp */,
+				B2CC606715C783D000885769 /* Bar.h */,
+				B2CC606815C783DA00885769 /* Bar.cpp */,
+				B2CC606A15C783EE00885769 /* Button.h */,
+				B2CC606B15C783F700885769 /* Button.cpp */,
+				B2CC606D15C783FE00885769 /* View.h */,
+				B2CC606E15C7840500885769 /* View.cpp */,
+				B2CC607415C786FC00885769 /* UIFactory.h */,
+				B2CC607615C7870A00885769 /* UIFactory.cpp */,
 			);
 			path = AbstractFactory;
 			sourceTree = "<group>";
@@ -117,6 +152,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2CC605415C7810200885769 /* main.cpp in Sources */,
+				B2CC606015C7829500885769 /* Window.cpp in Sources */,
+				B2CC606315C782E500885769 /* MacWindow.cpp in Sources */,
+				B2CC606615C7836600885769 /* LinuxWindow.cpp in Sources */,
+				B2CC606915C783DA00885769 /* Bar.cpp in Sources */,
+				B2CC606C15C783F700885769 /* Button.cpp in Sources */,
+				B2CC606F15C7840500885769 /* View.cpp in Sources */,
+				B2CC607715C7870A00885769 /* UIFactory.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +243,7 @@
 				B2CC605B15C7810200885769 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
